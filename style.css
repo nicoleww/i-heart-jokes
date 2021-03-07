@@ -136,6 +136,14 @@ video {
   font-size: 60px;
 }
 
+.pimg {
+  height: 400px;
+  background: url("assets/queenstreet.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 /* responsive styling */
 
 @media screen and (max-width: 1230px) {
