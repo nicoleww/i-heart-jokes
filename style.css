@@ -58,11 +58,22 @@ nav {
   height: 3px;
   background-color: whitesmoke;
   margin: 5px;
+  transition: 0.4s ease;
 }
 
 .burger {
   margin: 0 20px;
   display: none;
+}
+
+.exit .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.exit .line2 {
+  opacity: 0;
+}
+.exit .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .container {
