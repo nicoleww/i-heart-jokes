@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(20, 20, 20);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 6vh;
+  min-height: 8vh;
   background-color: rgb(20, 20, 20);
 }
 
@@ -79,13 +79,15 @@ nav {
 
 .container {
   position: relative;
+  height: 92vh;
+  width: 100%;
 }
 
 .container::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(4, 0, 56, 0.4);
   width: 100%;
-  height: 100%;
+  height: 92vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -93,12 +95,12 @@ nav {
 
 .container .headline {
   position: absolute;
-  top: 60%;
-  left: 30%;
+  top: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: whitesmoke;
   z-index: 2;
-  font-family: "Lobster", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .headline h1 {
@@ -113,6 +115,7 @@ nav {
 video {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .stats {
@@ -128,6 +131,7 @@ video {
 
 .stats div {
   border: 3px solid rgb(32, 32, 32);
+  border-radius: 6%;
   width: 350px;
   padding: 20px;
 }
@@ -138,12 +142,20 @@ video {
 
 .pimg {
   height: 400px;
-  background: url("assets/queenstreet.jpg");
+  width: 100%;
+  background: url("assets/main.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+.pimg::after {
+  content: "";
+  height: 400px;
+  width: 100%;
+  background-color: rgba(30, 0, 37, 0.4);
+  position: absolute;
+}
 /* responsive styling */
 
 @media screen and (max-width: 1230px) {
@@ -164,16 +176,16 @@ video {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
   body {
     overflow-x: hidden;
   }
   .container h1 {
-    font-size: 28px;
+    font-size: 26px;
     margin: 10px 0;
   }
   .container h2 {
-    font-size: 18px;
+    font-size: 13px;
   }
   .nav-links {
     position: absolute;
@@ -196,6 +208,7 @@ video {
   }
   .stats {
     font-size: 20px;
+    height: 250px;
   }
   .stats div {
     width: 200px;
@@ -205,6 +218,16 @@ video {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .stats {
+    font-size: 16px;
+  }
+  .stats div {
+    width: 150px;
+  }
+}
+
 .nav-active {
   transform: translateX(10%);
+  background-color: rgb(20, 20, 20);
 }
