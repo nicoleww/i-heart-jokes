@@ -7,13 +7,15 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   background-color: rgb(20, 20, 20);
   color: whitesmoke;
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -28,6 +30,9 @@ nav {
   color: whitesmoke;
   letter-spacing: 6px;
   margin: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-links {
@@ -122,7 +127,7 @@ video {
 .img-one {
   height: 600px;
   width: 100%;
-  background: url("assets/cntower.jpg");
+  background: url("assets/ttc.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -133,7 +138,7 @@ video {
   content: "";
   height: 600px;
   width: 100%;
-  background-color: rgba(49, 2, 59, 0.1);
+  background-color: rgba(28, 2, 36, 0.2);
   position: absolute;
 }
 
@@ -158,7 +163,7 @@ video {
 .img-three {
   height: 600px;
   width: 100%;
-  background: url("assets/ttc.jpg");
+  background: url("assets/queenstreet.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -232,6 +237,9 @@ video {
 /* responsive styling */
 
 @media screen and (max-width: 1230px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav-links {
     width: 50%;
   }
@@ -247,6 +255,9 @@ video {
 }
 
 @media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
   .container h1 {
     font-size: 28px;
     margin: 10px 0;
@@ -260,11 +271,9 @@ video {
     height: 94vh;
     top: 6vh;
     background-color: rgb(20, 20, 20);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
     transform: translateX(110%);
     transition: transform 0.4s ease-in;
     z-index: 10;
@@ -273,14 +282,26 @@ video {
     display: block;
     cursor: pointer;
   }
+
+  .col-one {
+    width: 300px;
+  }
+  .col-two {
+    width: 300px;
+  }
+  .col-three {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .stats {
-    font-size: 16px;
+  .nominees h2 {
+    font-size: 20px;
+    margin: 50px 0px;
   }
-  .stats div {
-    width: 150px;
+
+  .nominees h3 {
+    font-size: 18px;
   }
 }
 
