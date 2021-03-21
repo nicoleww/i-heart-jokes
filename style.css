@@ -120,9 +120,9 @@ video {
 }
 
 .img-one {
-  height: 500px;
+  height: 600px;
   width: 100%;
-  background: url("assets/ttc.jpg");
+  background: url("assets/cntower.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -131,9 +131,9 @@ video {
 
 .img-one::after {
   content: "";
-  height: 500px;
+  height: 600px;
   width: 100%;
-  background-color: rgba(49, 2, 59, 0.3);
+  background-color: rgba(49, 2, 59, 0.1);
   position: absolute;
 }
 
@@ -153,6 +153,16 @@ video {
   width: 100%;
   background-color: rgba(49, 2, 59, 0.2);
   position: absolute;
+}
+
+.img-three {
+  height: 600px;
+  width: 100%;
+  background: url("assets/ttc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about {
