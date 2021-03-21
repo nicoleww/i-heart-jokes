@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   background-color: rgb(20, 20, 20);
   color: whitesmoke;
@@ -85,7 +86,7 @@ nav {
 
 .container::after {
   content: "";
-  background-color: rgba(4, 0, 56, 0.4);
+  background-color: rgba(4, 0, 56, 0.2);
   width: 100%;
   height: 92vh;
   position: absolute;
@@ -119,9 +120,9 @@ video {
 }
 
 .img-one {
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background: url("assets/stage.jpg");
+  background: url("assets/ttc.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -130,15 +131,92 @@ video {
 
 .img-one::after {
   content: "";
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background-color: rgba(30, 0, 37, 0.4);
+  background-color: rgba(49, 2, 59, 0.3);
+  position: absolute;
+}
+
+.img-two {
+  height: 700px;
+  width: 100%;
+  background: url("assets/stage2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-two::after {
+  content: "";
+  height: 700px;
+  width: 100%;
+  background-color: rgba(49, 2, 59, 0.2);
   position: absolute;
 }
 
 .about {
   height: 100vh;
   width: 100%;
+}
+
+.nominees {
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+.nom-headlines {
+  margin: 250px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+.nom-headlines h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.underline {
+  width: 30%;
+  height: 3px;
+  background-color: whitesmoke;
+}
+
+.nom-headlines h3 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.col-container {
+  margin: 100px 0px 250px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.col-one {
+  width: 400px;
+}
+
+.col-two {
+  width: 400px;
+}
+
+.col-three {
+  width: 400px;
+}
+
+.col-container h3 {
+  font-size: 26px;
+  margin: 30px 0px;
+  letter-spacing: 3px;
 }
 
 /* responsive styling */
@@ -159,9 +237,6 @@ video {
 }
 
 @media screen and (max-width: 780px) {
-  body {
-    overflow-x: hidden;
-  }
   .container h1 {
     font-size: 28px;
     margin: 10px 0;
