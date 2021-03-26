@@ -340,8 +340,11 @@ footer {
   body {
     overflow-x: hidden;
   }
-  .img-one .img-two .img-three .img-four {
-    background-attachment: inherit;
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four {
+    background-attachment: scroll;
   }
   .container h1 {
     font-size: 28px;
@@ -397,7 +400,6 @@ footer {
   }
   .nominees h3 {
     font-size: 20px;
-    margin: 20px;
     text-align: center;
     font-weight: bold;
   }
