@@ -340,6 +340,9 @@ footer {
   body {
     overflow-x: hidden;
   }
+  .img-one .img-two .img-three .img-four {
+    background-attachment: initial;
+  }
   .container h1 {
     font-size: 28px;
     margin: 10px 0;
