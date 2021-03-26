@@ -340,7 +340,9 @@ footer {
   body {
     overflow-x: hidden;
   }
-  .img-one,
+  .img-one {
+    display: none;
+  }
   .img-two,
   .img-three,
   .img-four {
@@ -382,6 +384,7 @@ footer {
   .about {
     font-size: 18px;
     overflow-x: hidden;
+    height: 100vh;
   }
   .banner {
     font-size: 20px;
