@@ -171,8 +171,28 @@ video {
 }
 
 .about {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
+}
+
+.about-text {
+  margin: 80px;
+}
+
+.about h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 100px 0px 30px 0px;
+}
+
+.about {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  font-size: 30px;
 }
 
 .nominees {
@@ -191,7 +211,7 @@ video {
 }
 
 .nom-headlines h2 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
@@ -202,7 +222,7 @@ video {
 }
 
 .nom-headlines h3 {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 20px;
 }
 
@@ -234,6 +254,51 @@ video {
   letter-spacing: 3px;
 }
 
+.join-us {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.join-us h3 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+.join-us h4 {
+  font-size: 20px;
+}
+
+.img-four {
+  height: 700px;
+  width: 100%;
+  background: url("assets/nothin.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-four::after {
+  content: "";
+  height: 700px;
+  width: 100%;
+  background-color: rgba(3, 3, 58, 0.2);
+  position: absolute;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
 /* responsive styling */
 
 @media screen and (max-width: 1230px) {
@@ -252,7 +317,24 @@ video {
   .container h2 {
     font-size: 22px;
   }
-}
+  .about-text {
+    margin: 80px;
+  }
+  .about h3 {
+    margin: 80px 0px 30px 0px;
+  }
+  .banner {
+    margin-top: 150px;
+  }
+  .nom-headlines h2 {
+    font-size: 40px;
+  }
+  .nom-headlines h3 {
+    font-size: 25px;
+  }
+  .underline {
+    width: 50%;
+  }
 
 @media screen and (max-width: 780px) {
   body {
@@ -274,15 +356,48 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    transform: translateX(110%);
+    transform: translateX(130%);
     transition: transform 0.4s ease-in;
     z-index: 10;
+    display: none;
   }
   .burger {
     display: block;
     cursor: pointer;
   }
-
+  .about-text {
+    margin: 70px 30px;
+  }
+  .about h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 100px 0px 30px 0px;
+  }
+  .about {
+    font-size: 18px;
+    overflow-x: hidden;
+  }
+  .banner {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .nominees {
+    overflow-x: hidden;
+  }
+  .nominees h2 {
+    font-size: 30px;
+    margin: 30px 0px;
+  }
+  .underline {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .nominees h3 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
   .col-one {
     width: 300px;
   }
@@ -292,14 +407,36 @@ video {
   .col-three {
     width: 300px;
   }
+  .join-us h3 {
+    font-size: 30px;
+  }
+  .join-us h4 {
+    font-size: 18px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
+  .about-text {
+    margin: 0px 20px;
+  }
+  .about h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 30px 0px;
+  }
+  .about {
+    font-size: 16px;
+    overflow-x: hidden;
+    height: 140vh;
+  }
+  .banner {
+    font-size: 20px;
+    margin-top: 0px;
+  }
   .nominees h2 {
     font-size: 20px;
-    margin: 50px 0px;
+    margin: 10px 0px;
   }
-
   .nominees h3 {
     font-size: 18px;
   }
@@ -308,4 +445,5 @@ video {
 .nav-active {
   transform: translateX(10%);
   background-color: rgb(20, 20, 20);
+  display: inherit;
 }
