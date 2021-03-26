@@ -343,16 +343,7 @@ footer {
   .img-one .img-two .img-three .img-four {
     background-attachment:scroll;
   }
-  video {
-    display: none;
-  }
 
-  .container {
-    background: url("https://media.giphy.com/media/FaQU2LQ4h4Cg5lrsYG/giphy.gif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
   .container h1 {
     font-size: 28px;
     margin: 10px 0;
