@@ -2,7 +2,7 @@
 <h2>Description</h2>
 <br />
 <p>The I Heart Jokes Awards are an annual award ceremony in Toronto, Canada to celebrate the community's stand-up comedy scene. </p>
-<p>I was tasked with creating a new website for them that brings sophistication (and a little fun) to the awards, to help level up their reputation.</p>
+<p>I created a new website for them that brings sophistication (and a little fun) to the awards, to help level up their reputation.</p>
 <br />
 <h2>Screenshots</h2>
 <br />
